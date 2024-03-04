@@ -2,6 +2,7 @@ import random
 rps = ["rock", "paper", "scissors"]
 cmove = random.choice(rps)
 umove = input("Enter a choice (rock, paper, scissors): ")
+umove = umove.lower()
 print("\nYou chose ",umove, "computer chose",cmove,".\n")
 
 if umove == cmove:
